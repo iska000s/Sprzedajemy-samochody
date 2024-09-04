@@ -25,11 +25,11 @@
 
   </head>
 
-  <body class="flex flex-col">
+  <body class="flex flex-col" style="overflow-x: hidden;">
 <!-- NAVIGATIONS -->
-    <header class="flex h-79 px-16 my-3 justify-center">
+    <header class="flex h-79 px-16 my-3 justify-center w-full">
 
-        <section class="flex h-30 w-1200 my-4" style="width: 1200px; justify-content: space-between;">
+        <section class="flex h-30 my-4 w-full" style="justify-content: space-between;">
 
 
             <div class="flex flex-row gap-3">
@@ -55,11 +55,12 @@
     </header>
 
 <!-- HERO 1/LEFT -->
-    <section class="flex flex-col pt-32 h-825">
+    <section class="flex flex-col pt-28 relative" style="height: 825px;">
 
         <div class="main_background_element">
 <!-- DO ZROBIENIA 3. KRZYWE (CZY JAKO IMG CZY JAKO ELEMENT CSS) -->
 <!-- krzywe w tle -->
+            <img class=" to-blue bg-slate-800" src="./img/Hero 1/Vector (Stroke)-1.png">
         </div flex>
 
         <div  class="flex flex-col px-16">
@@ -72,59 +73,58 @@
             <div class="flex gap-24">
                 <button class="px-6 h-12 rounded-lg font-basic text-white text-basic bg-blue">Zobacz zdjęcia</button>
                 <button class="px-6 h-12 rounded-lg font-basic text-blue text-basic bg-white border-2 border-blue">Zadzwoń do nas</button>
+
             </div>
 
         </div>
 
-        <div class="main_img_group">
-            <img src="./img/cars.png" alt="cars">
+        <div class="-z-10">
+            <img class="absolute Ww-1064 h-404 left-80 top-72" src="./img/cars.png" alt="cars">
+            <img class="absolute Ww-1064 h-404 left-80 top-72" src="./img/cien.png">
         </div>
 
     </section>
 
-
-
-<!-- DO ZROBIENIA 2. RESZTĘ OD HEADERS BLOCK -->
-    <section  class="px-16">
-        <div class="gallery_box">
-            <p class="text">Prezentacja firmy</p>
-            <h3 class="header3">ZOBACZ NASZĄ GALERIĘ ZDJĘĆ</h3>
+    <section  class="flex flex-col w-full h-52 px-16 pt-20 gap-6 mb-11">
+        <div class="pb-6">
+            <p class="font-basiccondensed text-[21.5px] text-blue font-normal">Prezentacja firmy</p>
+            <h3 class="font-header text-[40px] text-black font-normal">ZOBACZ NASZĄ GALERIĘ ZDJĘĆ</h3>
         </div>
-        <ul>
-            <li class="ofert_element"><a>Samochody osobowe</a></li>
-            <li class="ofert_element"><a>Samochody dostawcze</a></li>
+        <ul class="flex gap-12">
+            <li class="font-basic text-[15px] text-blue font-bold"  style="letter-spacing: -1px"><a>Samochody osobowe</a></li>
+            <li class="font-basic text-[15px] text-black font-normal"  style="letter-spacing: -1px"><a>Samochody dostawcze</a></li>
         </ul>
     </section>
 
-
-    <section class="boxes gallery_block" id="gallery_block">
-        <div class="gallery">
-            <img class="img_gallery" src="./img/red_car.jfif">
-            <img class="img_gallery" src="./img/black_car.jfif">
-            <img class="img_gallery" src="./img/black_car_partt.jfif">
+<!-- do zrobienia od tego -->
+    <section class="flex" id="">
+        <div class="flex">
+            <img class="" src="./img/red_car.jfif">
+            <img class="" src="./img/black_car.jfif">
+            <img class="" src="./img/black_car_partt.jfif">
         </div>
-        <div class="navigation_dots"> </div>
+        <div class=""> </div>
     </section>
 
 
-    <section  class="px-16">
-        <div>  
-            <div class="seo_boxes">
-                <h4 class="header4">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h4>
-                <p class="text_white">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
-                <button>Rozwiń -></button>
+    <section  class="flex w-full h-96 px-16 py-16 gap-12 bg-[#282828] text-white">
+        <div class="flex flex-row w-full justify-between">  
+            <div class="gap-4">
+                <h4 class="text-[25px] font-header py-2" style="letter-spacing: -3;">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h4>
+                <p class="text-[14px] font-basiccondensed">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+                <button class="pt-5 underline underline-offset-8">Rozwiń -> </button>
             </div>
-            <div class="seo_boxes">
-                <h4 class="header4">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h4>
-                <p class="text_white">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
-                <button>Rozwiń -></button>
+            <div class="gap-4">
+                <h4 class="text-[25px] font-header py-2" style="letter-spacing: -3;">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h4>
+                <p class="text-[14px] font-basiccondensed">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
+                <button class="pt-5 underline underline-offset-8">Rozwiń -> </button>
             </div>
         </div>
     </section>
     
-    <footer  class="px-16">
-        <p class="text_footer">Cars Spot</p>
-        <link>Polityka prywatności</link>
+    <footer  class="px-16 w-full flex justify-between py-5 bg-[#282828] text-white border-t-2 border-white">
+        <p class="text-basic font-basiccondensed font-bold">Cars Spot</p>
+        <link class="text-basic font-basiccondensed font-normal underline underline-offset-1">Polityka prywatności</link>
     </footer>
 
 <script type="module" src="app.js"></script>
