@@ -1,0 +1,24 @@
+{
+  "name": "sprzedajemy-samochody",
+  "version": "1.0.0",
+  "description": "Sprzedajemy samochody z Europy - zadanie",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i ./css/style.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iska000s/Sprzedajemy-samochody.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iska000s/Sprzedajemy-samochody/issues"
+  },
+  "homepage": "https://github.com/iska000s/Sprzedajemy-samochody#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
