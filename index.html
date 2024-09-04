@@ -17,31 +17,37 @@
     <link href="/dist/output.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
 
   </head>
 
-  <body>
+  <body class="flex flex-col">
 <!-- NAVIGATIONS -->
-    <header class="boxes header">
+    <header class="flex h-79 px-16 my-3 justify-center">
 
-        <section class="navigations-box">
+        <section class="flex h-30 w-1200 my-4" style="width: 1200px; justify-content: space-between;">
 
-        <div class="logo-box">
-            <div class="logo">
-                <img src="./img/Vector (Stroke).png" alt="logo">
-                <span>Cars</span>Spot
+
+            <div class="flex flex-row gap-3">
+                <img class="h-7 w-6.5 self-center" src="./img/Vector (Stroke).png" alt="logo">
+                <b class="w-115 h-30 text-logo self-center" ><span class="text-blue">Cars</span>Spot</b>
+            
             </div>
-        </div>
+        
 
-        <div class="menu-box">
-            <ul class="menu_list">
-                <li id="menu_gallery">Galeria zdjęć</li>
-                <li class="menu_item" id="menu_faq">FaQ</li>
+        <div class="flex">
+            <ul class="flex text-[#282828] font-basic text-basic gap-3">
+                <li class="self-center">Galeria zdjęć</li>
+                <li class="self-center">FaQ</li>
             </ul>
         </div>
 
-        <div class="button-box">
-        <button class="button" id="button_call_1">Zadzoń do nas</button>
+        <div class="flex">
+        <button class="px-6 h-12 rounded-lg font-basic text-white text-basic bg-blue" id="button_call_1">Zadzoń do nas</button>
         </div>
         
         </section>
@@ -49,23 +55,23 @@
     </header>
 
 <!-- HERO 1/LEFT -->
-    <section class="boxes main_page" id="hero">
+    <section class="flex flex-col pt-32 h-825">
 
         <div class="main_background_element">
 <!-- DO ZROBIENIA 3. KRZYWE (CZY JAKO IMG CZY JAKO ELEMENT CSS) -->
 <!-- krzywe w tle -->
-        </div>
+        </div flex>
 
-        <div class="main_container">
+        <div  class="flex flex-col px-16">
 
-            <div class="content_box">
-            <h1 class="text-orange-500" >SPRZEDAJEMY SAMOCHODY <br>Z EUROPY</h1>
-            <p class="text">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
+            <div class="flex flex-col py-12 gap-y-12">
+            <h1 class="text-black font-header font-medium text-7xl" style="letter-spacing: -1.5px">SPRZEDAJEMY SAMOCHODY <br>Z EUROPY</h1>
+            <p class="text-basic font-basiccondensed font-normal">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
             </div>
 
-            <div class="main_buttons_box">
-                <button class="button">Zobacz zdjęcia</button>
-                <button class="button" id="button_call_2">Zadzwoń do nas</button>
+            <div class="flex gap-24">
+                <button class="px-6 h-12 rounded-lg font-basic text-white text-basic bg-blue">Zobacz zdjęcia</button>
+                <button class="px-6 h-12 rounded-lg font-basic text-blue text-basic bg-white border-2 border-blue">Zadzwoń do nas</button>
             </div>
 
         </div>
@@ -79,7 +85,7 @@
 
 
 <!-- DO ZROBIENIA 2. RESZTĘ OD HEADERS BLOCK -->
-    <section class="boxes headers_block" id="headers_block">
+    <section  class="px-16">
         <div class="gallery_box">
             <p class="text">Prezentacja firmy</p>
             <h3 class="header3">ZOBACZ NASZĄ GALERIĘ ZDJĘĆ</h3>
@@ -101,7 +107,7 @@
     </section>
 
 
-    <section class="boxes seo" id="seo">
+    <section  class="px-16">
         <div>  
             <div class="seo_boxes">
                 <h4 class="header4">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h4>
@@ -116,7 +122,7 @@
         </div>
     </section>
     
-    <footer class="boxes footer" id="footers">
+    <footer  class="px-16">
         <p class="text_footer">Cars Spot</p>
         <link>Polityka prywatności</link>
     </footer>

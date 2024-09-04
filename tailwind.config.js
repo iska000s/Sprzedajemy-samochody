@@ -5,7 +5,24 @@ module.exports = {
     '.public/index.html'
   ],
   theme: {
-    extend: {},
+ 
+    extend: {
+      fontSize: {
+        logo: `23px`,
+        basic: `16px`,
+      },
+      fontFamily: {
+        basic: 'Roboto Flex',
+        basiccondensed: `Roboto Condensed`,
+        header: `Bebas Neue`,
+      },
+      colors: {
+        blue: '#0147FF',
+      },
+      letterSpacing: {
+        tightest: `4`,
+      }
+    },
   },
   plugins: [],
 }
