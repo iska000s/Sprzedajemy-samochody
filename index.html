@@ -55,15 +55,15 @@
     </header>
 
 <!-- HERO 1/LEFT -->
-    <section class="flex flex-col pt-28 relative my-28">
+    <section class="flex flex-col pt-28 pb-32  relative h-screen">
 
         <div class="main_background_element">
 <!-- DO ZROBIENIA 3. KRZYWE (CZY JAKO IMG CZY JAKO ELEMENT CSS) -->
 <!-- krzywe w tle -->
-            <img class=" to-blue bg-slate-800" src="./img/Hero 1/Vector (Stroke)-1.png">
+            <!-- <img class=" to-blue bg-slate-800" src="./img/Hero 1/Vector (Stroke)-1.png"> -->
         </div flex>
 
-        <div  class="flex flex-col px-16">
+        <div  class="flex flex-col px-16 ">
 
             <div class="flex flex-col py-12 gap-y-12">
             <h1 class="text-black font-header font-medium text-7xl" style="letter-spacing: -1.5px">SPRZEDAJEMY SAMOCHODY <br>Z EUROPY</h1>
@@ -78,14 +78,14 @@
 
         </div>
 
-        <div class="-z-10">
-            <img class="absolute Ww-1064 h-404 left-80 top-72" src="./img/cars.png" alt="cars">
-            <img class="absolute Ww-1064 h-404 left-80 top-72" src="./img/cien.png">
+        <div class="-z-10 ">
+            <img class=" absolute left-80 top-72 Ww-1064 h-404 " src="./img/cars.png" alt="cars">
+            <img class=" absolute left-80 top-72 Ww-1064 h-404 mb-32" src="./img/cien.png">
         </div>
 
     </section>
 
-    <section  class="flex flex-col w-full h-52 px-16 pt-20 gap-6 mb-11" id="gallery">
+    <section  class="flex flex-col w-full h-52 px-16 pt-20 gap-6 mb-11 " id="gallery">
         <div class="pb-6">
             <p class="font-basiccondensed text-[21.5px] text-blue font-normal">Prezentacja firmy</p>
             <h3 class="font-header text-[40px] text-black font-normal">ZOBACZ NASZĄ GALERIĘ ZDJĘĆ</h3>
@@ -97,13 +97,22 @@
     </section>
 
 <!-- do zrobienia od tego -->
-    <section class="flex">
-        <div class="flex">
-            <img class="" src="./img/red_car.jfif">
-            <img class="" src="./img/black_car.jfif">
-            <img class="" src="./img/black_car_partt.jfif">
+    <section class="gallery_imgs_box flex flex-col pl-16 py-5" id="gallery_imgs_box">
+        <div class="imgs_box flex overflow-x-auto gap-16 snap-x snap-mandatory" style="scrollbar-width: none;" id="imgs_box">
+            
+            <img class="img_gallery snap-center flex-shrink-0" id="gallery_img1" src="./img/red_car.jfif" alt="Zdjęcie 1">
+            <img class="img_gallery snap-center flex-shrink-0" id="gallery_img2" src="./img/black_car.jfif" alt="Zdjęcie 2">
+            <img class="img_gallery snap-center flex-shrink-0" id="gallery_img3" src="./img/black_car_partt.jfif" alt="Zdjęcie 3">
         </div>
-        <div class=""> </div>
+        <div class="dots flex justify-center mt-4 space-x-2">
+            <button class="dot size-[8px] bg-gray_dot rounded-full" index="0"></button>
+            <button class="dot size-[8px] bg-gray_dot rounded-full" index="1"></button>
+            <button class="dot size-[8px] bg-gray_dot rounded-full" index="2"></button>
+            <button class="dot size-[8px] bg-gray_dot rounded-full" index="3"></button>
+            <button class="dot size-[8px] bg-gray_dot rounded-full" index="4"></button>
+        </div>
+
+
     </section>
 
 
@@ -127,9 +136,9 @@
         <link class="text-basic font-basiccondensed font-normal underline underline-offset-1"><a href="policy.html">Polityka prywatności</a></link>
     </footer>
 
-<script type="module" src="app.js"></script>
-
-
+    
+    
 </body>
+<script type="module" src="app.js"></script>
 </html>
 

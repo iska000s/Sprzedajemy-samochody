@@ -18,6 +18,7 @@ module.exports = {
       },
       colors: {
         blue: '#0147FF',
+        gray_dot: '#EDEDED',
       },
       letterSpacing: {
         tightest: `4`,

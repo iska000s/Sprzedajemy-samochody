@@ -20,5 +20,8 @@
   "homepage": "https://github.com/iska000s/Sprzedajemy-samochody#readme",
   "dependencies": {
     "tailwindcss": "^3.4.10"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0-alpha.6"
   }
 }
