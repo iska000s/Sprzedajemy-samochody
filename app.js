@@ -1,6 +1,61 @@
-const gallery = document.querySelector('.imgs_box');
-const dots = document.querySelector('.dots');
-const dot = document.querySelectorAll('.dot');
+const slider = document.getElementById('slider');
+const dots = document.querySelectorAll('.dot');
+let currentIndex = 0;
+
+
+// PRZECHODZENIE DO KONKRETNEGO SLAJDU GALERII ZDJĘĆ
+function goToSlide(index){
+    const slideWidth = slider.children[index].clientWidth;
+    slider.scrollTo({
+        left: index * slideWidth,
+        behavior: 'smooth'
+    });
+    currentIndex = index;
+    updateDots();
+};
+
+// AKTUALIZOWANIU STANU KROPEK W SLAJDERZE
+function updateDots(){
+    dots.forEach((dot, index) => {
+        if(index === currentIndex){
+            dot.classList.add('bg-red-800');
+            dot.classList.remove('bg-gray_dot');
+        } else{
+            dot.classList.add('bg-gray_dot');
+            dot.classList.remove('bg-red-800');
+        }
+    });
+};
+
+
+// OBSŁUGA KLIKNIĘCIA W KROPKI
+
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        goToSlide(index);
+    });
+});
+
+updateDots();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const gallery = document.querySelector('.imgs_box');
+// const dots = document.querySelector('.dots');
+// const dot = document.querySelectorAll('.dot');
+
 
 
 // dot.forEach(element => {
@@ -19,20 +74,24 @@ const dot = document.querySelectorAll('.dot');
     //     dots.classList.add("bg-red-800");
     //     dots.classList.remove("flex");
     // }
-for (let i=0; i<=dot.length+1; i++){
-    dots.children[i].addEventListener("click", onClick);
-    // gallery.children[i].classList.add("justify-centre");
 
-    function onClick (){
-        for(let j=0; j<=dot.length+1; j++){
-            dots.children[j].classList.remove("bg-red-800");
-            dots.children[i].classList.remove("bg-gray_dot");
-            dots.children[i].classList.add("bg-red-800");
-            dots.children[j].classList.add("bg-gray_dot");
-        }
-    }
 
-}
+
+
+// for (let i=0; i<=dot.length+1; i++){
+//     dots.children[i].addEventListener("click", onClick);
+//     // gallery.children[i].classList.add("justify-centre");
+
+//     function onClick (){
+//         for(let j=0; j<=dot.length+1; j++){
+//             dots.children[j].classList.remove("bg-red-800");
+//             dots.children[i].classList.remove("bg-gray_dot");
+//             dots.children[i].classList.add("bg-red-800");
+//             dots.children[j].classList.add("bg-gray_dot");
+//         }
+//     }
+
+// }
    
 
 
