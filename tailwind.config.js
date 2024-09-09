@@ -22,9 +22,12 @@ module.exports = {
       },
       letterSpacing: {
         tightest: `4`,
-      }
+      },
+      
     },
+    
   },
   plugins: [],
 }
+
 

@@ -22,12 +22,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 
   </head>
 
   <body class="flex flex-col w-fit " style="overflow-x: hidden;">
-<!-- NAVIGATIONS -->
-    <header class="flex h-79 lg:px-16 sm:px-1 py-3 justify-center w-full fixed z-50 bg-white">
+
+<!--cz.1 NAVIGATIONS -->
+    <header class="flex h-79 lg:px-16 sm:px-1 py-3 justify-center w-full fixed z-30 bg-transparent" id="navbar">
 
         <section class="flex h-30 my-4 w-full" style="justify-content: space-between;">
 
@@ -54,37 +56,40 @@
 
     </header>
 
-<!-- HERO 1/LEFT -->
+  
+
+
+
+<!--cz.2 HERO 1/LEFT -->
     <section class="flex flex-col pt-28 lg:pb-32  relative h-full w-full lg:px-16 sm:px-2">
 
-        <div class="main_background_element">
-<!-- DO ZROBIENIA 3. KRZYWE (CZY JAKO IMG CZY JAKO ELEMENT CSS) -->
-<!-- krzywe w tle -->
-            <!-- <img class=" to-blue bg-slate-800" src="./img/Hero 1/Vector (Stroke)-1.png"> -->
-        </div flex>
+        <!-- krzywe - element niestandarowy -->
+        <div class="flex z-0">
+            <img class="absolute top-0 right-32 h-[600px]" src="img/vecotr_1_5.svg">
+            <img class="absolute top-[-10%] -rotate-12 -right-36 h-[600px] " src="img/vector_2_2.svg">
+        </div>
 
-        <div  class="flex flex-col ">
-
+        <div  class="flex flex-col z-20">
             <div class="flex flex-col py-12 lg:gap-y-12">
             <h1 class="text-black font-header font-medium text-7xl" style="letter-spacing: -1.5px">SPRZEDAJEMY SAMOCHODY <br>Z EUROPY</h1>
             <p class="text-basic font-basiccondensed font-normal">Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.</p>
             </div>
 
-            <div class="flex gap-24">
+            <div class="flex gap-24 overflow-hidden">
                 <button class="lg:px-6 h-12 rounded-lg font-basic text-white text-basic bg-blue"><a href="#gallery"> Zobacz zdjęcia</a></button>
                 <button class="lg:px-6 h-12 rounded-lg font-basic text-blue text-basic bg-white border-2 border-blue">Zadzwoń do nas</button>
-
             </div>
 
         </div>
 
-        <div class="-z-10 lg:absolute left-80 top-72">
-            <img class="absolute ww-1064 h-404 " src="./img/cars.png" alt="cars">
-            <img class="relative ww-1064 h-404" src="./img/cien.png">
+        <div class="z-10 lg:absolute right-0 top-80">
+            <img class="absolute lg:w-[1064px]  " src="./img/cars.png" alt="cars">
+            <img class="relative lg:w-[1064px] " src="./img/cien.png">
         </div>
 
     </section>
 
+<!--cz.3 HEADERS BLOCK -->
     <section  class="flex flex-col w-full h-52 lg:px-16 sm:px-2 pt-20 gap-6 mb-11" id="gallery">
         <div class="pb-6">
             <p class="font-basiccondensed text-[21.5px] text-blue font-normal">Prezentacja firmy</p>
@@ -96,7 +101,7 @@
         </ul>
     </section>
 
-<!-- do zrobienia od tego -->
+    <!-- CZ.4 GALLERY -->
 <section class="gallery_imgs_box relative w-full py-5 lg:pl-16" id="gallery_imgs_box">
     <div class="slider flex overflow-hidden scroll-smooth gap-16 snap-x snap-mandatory" style="scrollbar-width: none;" id="slider">
         
@@ -113,40 +118,24 @@
 
 
 </section>
-<!-- <section class="gallery_imgs_box flex flex-col pl-16 py-5" id="gallery_imgs_box">
-    <div class="imgs_box flex overflow-x-auto gap-16 snap-x snap-mandatory" style="scrollbar-width: none;" id="imgs_box">
-        
-        <img class="img_gallery snap-center flex-shrink-0" id="gallery_img1" src="./img/red_car.jfif" alt="Zdjęcie 1">
-        <img class="img_gallery snap-center flex-shrink-0" id="gallery_img2" src="./img/black_car.jfif" alt="Zdjęcie 2">
-        <img class="img_gallery snap-center flex-shrink-0" id="gallery_img3" src="./img/black_car_partt.jfif" alt="Zdjęcie 3">
-    </div>
-    <div class="dots flex justify-center mt-4 space-x-2">
-        <button class="dot size-[8px] bg-gray_dot rounded-full" index="0"></button>
-        <button class="dot size-[8px] bg-gray_dot rounded-full" index="1"></button>
-        <button class="dot size-[8px] bg-gray_dot rounded-full" index="2"></button>
-        <button class="dot size-[8px] bg-gray_dot rounded-full" index="3"></button>
-        <button class="dot size-[8px] bg-gray_dot rounded-full" index="4"></button>
-    </div>
 
-
-</section> -->
-
-
+<!-- CZ.5 SEO -->
     <section  class="flex w-full h-fit py-16 gap-14 bg-[#282828] text-white px-16" id="seo">
         <div class="flex flex-row w-full justify-between lg:gap-x-11">  
             <div class="">
                 <h4 class="text-[25px] font-header py-2" style="letter-spacing: -3;">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h4>
                 <p class="text-[14px] font-basiccondensed">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
-                <button class="pt-5 underline underline-offset-8">Rozwiń -> </button>
+                <button class="flex w-16 h-12 pt-5 border-b-2 border-white">Rozwiń<span class="material-symbols-outlined">arrow_downward</span></button>
             </div>
-            <div class="">
+            <div class="flex flex-col">
                 <h4 class="text-[25px] font-header py-2" style="letter-spacing: -3;">Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.</h4>
                 <p class="text-[14px] font-basiccondensed">Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]</p>
-                <button class="pt-5 underline underline-offset-8">Rozwiń -> </button>
+                <button class="flex w-16 h-12 pt-5 border-b-2 border-white">Rozwiń<span class="material-symbols-outlined">arrow_downward</span></button>
             </div>
         </div>
     </section>
     
+    <!-- CZ. 6 FOOTER -->
     <footer  class="w-full flex justify-between py-5 bg-[#282828] text-white border-t-2 border-white px-16">
         <p class="text-basic font-basiccondensed font-bold">Cars Spot</p>
         <link class="text-basic font-basiccondensed font-normal underline underline-offset-1"><a href="policy.html">Polityka prywatności</a></link>
@@ -156,5 +145,6 @@
     
 </body>
 <script type="module" src="app.js"></script>
+
 </html>
 

@@ -4,6 +4,14 @@ const img = document.querySelector('.gallery__img');
 let currentIndex = 0;
 
 
+// spróbwać zrobić interwał!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! żeby zdj same przeskakiwały
+let intervalID = setInterval(function(index) {
+
+}, 1000);
+
+
+
+
 // PRZECHODZENIE DO KONKRETNEGO SLAJDU GALERII ZDJĘĆ
 function goToSlide(index){
     const slideWidth = (slider.children[index].clientWidth)*0.9;
@@ -12,8 +20,11 @@ function goToSlide(index){
         behavior: 'smooth'
     });
     currentIndex = index;
+  
     updateDots();
 };
+
+
 
 // AKTUALIZOWANIU STANU KROPEK W SLAJDERZE
 function updateDots(){
@@ -38,6 +49,24 @@ dots.forEach((dot, index) => {
 });
 
 updateDots();
+
+
+
+
+
+
+// zmiana koloru paska nawigacji
+window.addEventListener('scroll', function(){
+    const navbar = document.getElementById('navbar');
+    if(window.scrollY > 90){
+        navbar.classList.remove('bg-transparent');
+        navbar.classList.add('bg-white');
+    } else{
+        navbar.classList.remove('bg-white');
+        navbar.classList.add('bg-transparent')
+    }
+});
+
 
 
 
