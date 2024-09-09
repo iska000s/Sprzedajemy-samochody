@@ -5,7 +5,6 @@ module.exports = {
     '.public/index.html'
   ],
   theme: {
- 
     extend: {
       fontSize: {
         logo: `23px`,
@@ -29,5 +28,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-
